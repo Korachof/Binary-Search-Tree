@@ -10,6 +10,11 @@ class BinarySearchTree:
         self.root = None
 
     def insert(self, value):
+        """
+        Insert a new node into the BST
+        :param value: INT (The Value of the Node)
+        :return: Bool (True if successfully insertted, False otherwise)
+        """
         new_node = Node(value)
 
         if self.root is None:
@@ -39,6 +44,11 @@ class BinarySearchTree:
                     current_node = current_node.right
 
     def contains(self, value):
+        """
+        Checks to see if the BST contains a Node with the given value
+        :param value: Int (The value of the node to be checked)
+        :return: Bool (True if it contains the Node, False otherwise)
+        """
         if self.root is None:
             return False
 
